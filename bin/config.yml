@@ -1,0 +1,12 @@
+SERVER: 'main' #Nazwa serwera w configu BungeeCorda, na ktory gracz zostanie przeteleportowany.
+PLAYER_INFO:
+  POSITION: '&8%> &7Jestes %pos%# w kolejce' #Info o pozycji w kolejce.
+  JOIN: '&8%> &7Przeniesiono na serwer glowny!' #Wiadomosc po przeteleportowaniu na glowny serwer.
+  
+QUEUES:
+ 'dlagraczy': #ID kolejki - tu mozesz wpisac dowolny wyraz.
+   TIMER: '15s' #Czas po ktorym gracz zostanie przeteleportowany przed nastepnym graczem.
+   PERMISSION: 'queue.player' #Permisja, po ktorej gracz bedzie weryfikowany do jakiej kolejki ma zostac przydzielony.
+ 'dlavipow':
+   TIMER: '10s'
+   PERMISSION: 'queue.vip'
